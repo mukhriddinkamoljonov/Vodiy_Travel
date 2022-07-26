@@ -64,13 +64,13 @@ const Navbar = () => {
           <WrapperTopNavbar>
             <div>
               {" "}
-              <a href="tel:+998-90-531-34-13" className="navbarPhone">
+              <a href="tel:+998-93-971-19-97" className="navbarPhone">
                 <span className="navbarPhoneIcon">
                   <BiPhoneCall className="phoneIcon" />
                 </span>
                 <div className="navbarPhoneDiv">
                   <p>Telefon Raqam:</p>
-                  <p>+998-90-531-34-13</p>
+                  <p>+998-93-971-19-97</p>
                 </div>
               </a>
             </div>
