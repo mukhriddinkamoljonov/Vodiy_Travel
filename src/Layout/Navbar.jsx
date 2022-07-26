@@ -50,7 +50,7 @@ const Navbar = () => {
   const stickMenuNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      // window height changed for the demo
+      // window height changed for the
       windowHeight > 151
         ? setStickyMenuClass("sticky_menu_nav")
         : setStickyMenuClass("");
