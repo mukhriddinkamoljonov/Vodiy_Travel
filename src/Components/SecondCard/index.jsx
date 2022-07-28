@@ -8,12 +8,12 @@ const SecondCard = (props) => {
     console.log(newRating);
   };
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-1 rounded-3xl h-64 mb-10">
-      <div className="col-span-5 rounded-3xl border-r-5 border-blue-400">
+    <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-1 rounded-xl h-64 mb-10">
+      <div className="col-span-5 rounded-xl border-r-5 border-blue-400">
         <img
           src={props.img}
           alt="There should be a img here"
-          className="md:rounded-tl-3xl md:rounded-tr-none rounded-t-3xl md:rounded-bl-3xl w-full h-full object-cover"
+          className="md:rounded-tl-xl md:rounded-tr-none rounded-t-xl md:rounded-bl-xl w-full h-full object-cover"
         />
       </div>
       <div className="col-span-4 flex items-center justify-center flex-col py-5 px-4 md:text-left text-center bg-[#e8ecf5]">
@@ -35,7 +35,7 @@ const SecondCard = (props) => {
           onClick={() => {
             navigate(`/innerTurizm/${props.link}`);
           }}
-          className="mt-4 md:border-2 border-[1px] border-[#fff] font-semibold md:px-4 md:py-2 px-3 py-1 md:text-base text-[14px] rounded-3xl hover:text-[#e7e3e3] text-[#fff]"
+          className="mt-4 md:border-2 border-[1px] border-[#fff] font-semibold md:px-4 md:py-2 px-3 py-1 md:text-base text-[14px] rounded-xl hover:text-[#e7e3e3] text-[#fff]"
         >
           zakaz qilish
         </button>

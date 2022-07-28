@@ -21,7 +21,7 @@ export const CaruselItem = styled.div`
   img {
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 12px;
     object-fit: cover;
   }
   .paragraphDiv {
@@ -29,11 +29,11 @@ export const CaruselItem = styled.div`
     top: 74%;
     left: 0;
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 12px;
     margin: 20px;
     padding: 22px 20px;
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 18px;
     color: #626672;
   }
 `;

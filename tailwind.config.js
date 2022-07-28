@@ -13,6 +13,9 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000'
     },
+    // borderRadius: {
+    //   'rounded-3xl': '20px',
+    // }
   },
   plugins: [],
 }

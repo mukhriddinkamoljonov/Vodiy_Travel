@@ -97,7 +97,7 @@ const Contact = () => {
                 </a>
               </div>
               <iframe
-                className="w-full md:h-[350px] h-[200px] md:rounded-3xl rounded-lg border-none mt-[30px]"
+                className="w-full md:h-[350px] h-[200px] md:rounded-xl rounded-lg border-none mt-[30px]"
                 title="This is a unique title"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11988.36848973895!2d69.22814145000001!3d41.3068595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1658514867575!5m2!1sen!2s"
                 allowFullScreen=""
@@ -106,13 +106,13 @@ const Contact = () => {
               ></iframe>
             </div>
             <div>
-              <div className="bg-green pt-10 pb-5 md:rounded-3xl rounded-lg md:px-5 px-3">
+              <div className="bg-green pt-10 pb-5 md:rounded-xl rounded-lg md:px-5 px-3">
                 <form className="flex flex-col">
                   <label className="text-white text-[18px] mb-1" htmlFor="">
                     Ismingiz
                   </label>
                   <input
-                    className="h-12 rounded-3xl pl-4 outline-none"
+                    className="h-12 rounded-xl pl-4 outline-none"
                     maxLength={100}
                     required
                     type="text"
@@ -125,7 +125,7 @@ const Contact = () => {
                     Telefon Raqam
                   </label>
                   <input
-                    className="h-12 rounded-3xl pl-4 outline-none"
+                    className="h-12 rounded-xl pl-4 outline-none"
                     maxLength={100}
                     required
                     type="email"
@@ -139,13 +139,13 @@ const Contact = () => {
                   </label>
                   <textarea
                     required
-                    className="rounded-3xl md:h-[257px] h-[100px] pl-4 pt-4 outline-none"
+                    className="rounded-xl md:h-[257px] h-[100px] pl-4 pt-4 outline-none"
                     maxLength={500}
                     cols="30"
                     rows="10"
                     placeholder="Write your message"
                   ></textarea>
-                  <button className="border-2 text-white font-bold hover:text-[#e6e4e4] m-auto rounded-3xl border-white py-2 p-1 mt-4 w-40">
+                  <button className="border-2 text-white font-bold hover:text-[#e6e4e4] m-auto rounded-xl border-white py-2 p-1 mt-4 w-40">
                     Send
                   </button>
                 </form>
