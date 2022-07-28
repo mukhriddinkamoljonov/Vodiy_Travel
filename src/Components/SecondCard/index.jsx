@@ -8,7 +8,7 @@ const SecondCard = (props) => {
     console.log(newRating);
   };
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-1 rounded-xl h-64 mb-10">
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-12 md:grid-rows-1 rounded-xl lg:h-64 md:h-64 mb-10">
       <div className="col-span-5 rounded-xl border-r-5 border-blue-400">
         <img
           src={props.img}
@@ -27,7 +27,7 @@ const SecondCard = (props) => {
           {props.day} | {props.location}
         </p>
       </div>
-      <div className="col-span-3 md:rounded-tr-3xl md:rounded-bl-none rounded-b-3xl px-2 py-4 text-center rounded-br-3xl flex items-center justify-center flex-col bg-green">
+      <div className="col-span-3 md:rounded-tr-xl md:rounded-bl-none rounded-b-xl px-2 py-4 text-center rounded-br-xl flex items-center justify-center flex-col bg-green">
         <ReactStars size={22} onChange={ratingChanged} />
         <p className="text-[#fff] text-[20px] font-bold mt-2">{props.price}</p>
         <p className="text-[#fff] text-sm font-bold">/ {props.forHowMany}</p>

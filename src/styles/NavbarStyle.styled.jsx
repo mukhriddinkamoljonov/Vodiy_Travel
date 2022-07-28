@@ -100,7 +100,8 @@ export const SocialMediaIcons = styled.div`
     gap: 15px;
   }
 
-  ul li {
+  a {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +113,7 @@ export const SocialMediaIcons = styled.div`
     border-radius: 100%;
     transition: all 0.3s ease;
   }
-  ul li:hover {
+  a:hover {
     border: 1px solid #00a795;
   }
 `;
@@ -124,7 +125,7 @@ export const NavbarLisItems = styled.div`
       margin: 0 20px;
       color: #fff;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.3;
       position: relative;
       text-transform: uppercase;

@@ -51,7 +51,7 @@ const InnerTurizm = () => {
       </InnerContainer>
       <div>
         <GlobalContainer>
-          <div className="py-[95px]">
+          <div>
             {data.map((item) => (
               <SecondCard
                 key={item.id}

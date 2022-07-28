@@ -12,7 +12,7 @@ const PackageCard = (props) => {
 				objectFit: "cover",
 			}}
 		>
-			<div className="bg-green rounded-xl ml-[75%] text-white py-2 px-4 w-[137px] text-sm flex justify-center items-center">
+			<div className="bg-green rounded-xl text-white py-2 px-4 w-[137px] text-sm flex justify-center items-center">
 				{props.package}
 			</div>
 			<div className="bg-white p-6 rounded-xl mt-[100px] opacity-70 max-w-[345px]">
