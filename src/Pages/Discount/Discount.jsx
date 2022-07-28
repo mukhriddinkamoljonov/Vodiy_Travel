@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   GlobalContainer,
   InnerAndOuterContainer,
@@ -8,6 +8,11 @@ import img from "../../assets/photo/sydney.jpg";
 import { DiscountContainer } from "./DiscountStyle.style";
 
 const Discount = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   const data = [
     {
       id: 1,

@@ -1,11 +1,16 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from "react";
+import React, { useEffect } from "react";
 import {
   GlobalContainer,
   InnerAndOuterContainer,
 } from "../../styles/GlobalStyle.styled";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   return (
     <>
       <InnerAndOuterContainer>

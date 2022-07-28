@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Destination from "../../Components/Destination/Destination";
 import {
   GlobalContainer,
@@ -12,6 +12,11 @@ import background5 from "../../assets/photo/sma.jpg";
 import {OuterContainer} from "./OuterStyle"
 
 const OuterTurizm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   const array = [
     {
       id: 1,

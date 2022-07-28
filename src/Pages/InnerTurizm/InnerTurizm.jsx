@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SecondCard from "../../Components/SecondCard";
 import {
   GlobalContainer,
@@ -9,6 +9,11 @@ import img2 from "../../assets/photo/card.jpg";
 import { InnerContainer } from "./innerTurizmStyle.styled";
 
 const InnerTurizm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   const data = [
     {
       id: "samarqand",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import {
   GlobalContainer,
@@ -6,6 +6,11 @@ import {
 } from "../../styles/GlobalStyle.styled";
 
 function InnerSlug() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   const { slug } = useParams();
   return (
     <>
