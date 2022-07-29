@@ -6,8 +6,8 @@ import OuterTurizm from "../Pages/OuterTurizm/OuterTurizm";
 import Home from "../Home/Home";
 import NotFound from "../Pages/NotFound";
 import { BrowserRouter as Router, Route, Routes, Switch } from "react-router";
-import InnerSlug from "../Pages/Inner-turism-slug/slug";
-import OuterTurismSlug from "../Pages/Outer-turism-slug/slug";
+// import InnerSlug from "../Pages/Inner-turism-slug/slug";
+import Slug from "../Pages/Outer-turism-slug/slug";
 const Routess = () => {
   return (
     <Routes>
@@ -18,9 +18,9 @@ const Routess = () => {
       <Route path="/contact" element={<Contact />} />
 
       {/* there should be a 'discount' page slug */}
-      <Route path="/discount/:slug" element={<InnerSlug />}></Route>
-      <Route path="/innerTurizm/:slug" element={<InnerSlug />}></Route>
-      <Route path="/outerTurizm/:slug" element={<OuterTurismSlug />}></Route>
+      <Route path="/discount/:slug" element={<Slug />}></Route>
+      <Route path="/innerTurizm/:slug" element={<Slug />}></Route>
+      <Route path="/outerTurizm/:slug" element={<Slug />}></Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

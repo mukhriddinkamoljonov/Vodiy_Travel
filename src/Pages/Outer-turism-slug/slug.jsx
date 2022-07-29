@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import Slider from "react-slick";
 // import { SliderImgWrapper } from "../../Home/HomeStyle.styled";
@@ -11,13 +11,15 @@ import img2 from "../../assets/photo/card.jpg";
 import img3 from "../../assets/photo/maldive.jpg";
 import img4 from "../../assets/photo/sydney.jpg";
 import img5 from "../../assets/photo/packageSam.jpg";
+import Modal from "../../Components/Modal";
 
 const OuterTurismSlug = () => {
+  const [active, setActive] = useState(false);
   useEffect(() => {
     window.scrollTo({
       top: 0,
     });
-  }, []);
+  }, []); 
   const settings = {
     dots: false,
     fade: false,
@@ -68,6 +70,10 @@ const OuterTurismSlug = () => {
       },
     ],
   };
+  const sendInfo = () => {
+    console.log("a");
+    setActive(true);
+  };
   return (
     <>
       <InnerAndOuterContainer>
@@ -76,6 +82,7 @@ const OuterTurismSlug = () => {
         </GlobalContainer>
       </InnerAndOuterContainer>
       <GlobalContainer>
+        {active && <Modal />}
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-3 lg:gap-7 md:gap-7 gap-0 py-[50px]">
           <div className="col-span-2">
             <div className="flex justify-between items-center mb-8">
@@ -109,7 +116,10 @@ const OuterTurismSlug = () => {
             <div className="max-w-[750px]">
               <img className="object-cover rounded-xl" src={img} alt="" />
             </div>
-            <button className="bg-green py-3 px-4 rounded-xl mt-8 flex items-center justify-center text-white">
+            <button
+              onClick={sendInfo}
+              className="bg-green py-3 px-4 rounded-xl mt-8 flex items-center justify-center text-white"
+            >
               BUYURTMA BERISH
             </button>
             <p className="text-[19px] font-bold mt-8">Ma'lumot :</p>
