@@ -21,6 +21,7 @@ const Routess = () => {
       <Route path="/discount/:slug" element={<Slug />}></Route>
       <Route path="/innerTurizm/:slug" element={<Slug />}></Route>
       <Route path="/outerTurizm/:slug" element={<Slug />}></Route>
+      
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
