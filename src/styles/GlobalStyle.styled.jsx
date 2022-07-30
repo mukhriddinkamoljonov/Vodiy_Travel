@@ -14,8 +14,9 @@ export const GlobalContainer = styled.div`
 
 export const WrapperNavbar = styled.div`
   position: absolute;
+  display: block;
   width: 100%;
-  z-index: ${({ active }) => (active ? "-1" : "1")};
+  z-index: 999;
 
   .sticky_nav {
     transition: all 0.5s ease;
@@ -27,6 +28,9 @@ export const WrapperNavbar = styled.div`
     justify-content: space-between;
     padding: 5px 0;
     background-color: #eee;
+    ul {
+      // margin-right: 70px;
+    }
     li {
       color: #223645;
     }
@@ -39,10 +43,6 @@ export const WrapperNavbar = styled.div`
     }
   }
 `;
-
-// export const ModalDiv = styled.div`
-
-// `
 
 export const TopNavbar = styled.div`
   background-color: transparent;
@@ -79,6 +79,7 @@ export const InnerAndOuterContainer = styled.div`
   text-transform: uppercase;
   margin-bottom: 0;
   opacity: 0.9;
+
   h1 {
     font-size: 60px;
     font-weight: 800;

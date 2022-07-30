@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import Slider from "react-slick";
-import "../../styles/GlobalStyle.styled";
 // import { SliderImgWrapper } from "../../Home/HomeStyle.styled";
 import {
   GlobalContainer,
   InnerAndOuterContainer,
-  WrapperNavbar,
 } from "../../styles/GlobalStyle.styled";
 import img from "../../assets/photo/sma.jpg";
 import img2 from "../../assets/photo/card.jpg";
@@ -26,6 +24,7 @@ const OuterTourismSlug = () => {
   useEffect(() => {
     window.addEventListener("click", (e) => {
       if (e.target.id === "close") {
+        // console.log(e.target.id);
         setIsActiveModal(false);
         document.body.style.overflow = "visible";
       }
@@ -98,9 +97,7 @@ const OuterTourismSlug = () => {
         <GlobalContainer>
           <h1>Maqsad</h1>
         </GlobalContainer>
-        <WrapperNavbar >
-          {isActiveModal && <Modal close={closeModal} />}
-        </WrapperNavbar>
+        {isActiveModal && <Modal close={closeModal} />}
       </InnerAndOuterContainer>
       <GlobalContainer>
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-3 lg:gap-7 md:gap-7 gap-0 py-[50px]">
