@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
@@ -36,6 +36,11 @@ import HomeCall from "../Components/HomeCallBack/HomeCall";
 import { HomeCallWrap } from "../Components/HomeCallBack/HomeCallStyle";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0
+    })
+  }, [])
   let swiperData = [
     {
       id: 1,
@@ -64,7 +69,7 @@ const Home = () => {
     {
       id: 1,
       icon: <FaUmbrellaBeach />,
-      title: "Mavjud Turizm",
+      title: "Mavjud Tourism",
       paragraph: "Baxtingizni qidiring, shaharlar va davlatlarni kashf qiling,",
     },
     {
@@ -237,8 +242,8 @@ const Home = () => {
         </BlogSection>
       </GlobalContainer>
       <TextWrap>
-        <h6>TURIZM</h6>
-        <h2>TASHQI TURIZM</h2>
+        <h6>Tourism</h6>
+        <h2>TASHQI Tourism</h2>
         <p>
           Boshqa mamlakatlarga tashrif buyurib, ularning madaniyati, aholisi,
           tabiati bilan tanishishim – ijobiy his-tuyg’ularga va ko’plab
@@ -253,8 +258,8 @@ const Home = () => {
       <Carusel />
       <ButtonWrapper>
         <TextWrap>
-          <h6>Ichki Turizm</h6>
-          <h2>ICHKI TURIZM</h2>
+          <h6>Ichki Tourism</h6>
+          <h2>ICHKI Tourism</h2>
           <p>
             Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
             nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SecondCard from "../../Components/SecondCard";
 import {
   GlobalContainer,
@@ -6,9 +6,14 @@ import {
 } from "../../styles/GlobalStyle.styled";
 import img from "../../assets/photo/sma.jpg";
 import img2 from "../../assets/photo/card.jpg";
-import { InnerContainer } from "./innerTurizmStyle.styled";
+import { InnerContainer } from "./innerTourismStyle.styled";
 
-const InnerTurizm = () => {
+const InnerTourism = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   const data = [
     {
       id: "samarqand",
@@ -72,4 +77,4 @@ const InnerTurizm = () => {
   );
 };
 
-export default InnerTurizm;
+export default InnerTourism;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Destination from "../../Components/Destination/Destination";
 import {
   GlobalContainer,
@@ -11,7 +11,12 @@ import background4 from "../../assets/photo/packageSam.jpg";
 import background5 from "../../assets/photo/sma.jpg";
 import {OuterContainer} from "./OuterStyle"
 
-const OuterTurizm = () => {
+const OuterTourism = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
   const array = [
     {
       id: 1,
@@ -74,4 +79,4 @@ const OuterTurizm = () => {
   );
 };
 
-export default OuterTurizm;
+export default OuterTourism;

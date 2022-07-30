@@ -33,7 +33,7 @@ const SecondCard = (props) => {
         <p className="text-[#fff] text-sm font-bold">/ {props.forHowMany}</p>
         <button
           onClick={() => {
-            navigate(`/innerTurizm/${props.link}`);
+            navigate(`/innerTourism/${props.link}`);
           }}
           className="mt-4 md:border-2 border-[1px] border-[#fff] font-semibold md:px-4 md:py-2 px-3 py-1 md:text-base text-[14px] rounded-3xl hover:text-[#e7e3e3] text-[#fff]"
         >

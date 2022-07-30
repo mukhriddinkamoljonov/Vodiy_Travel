@@ -34,10 +34,10 @@ const Footer = () => {
                 </div>
                 <ul className="ul_items">
                   <li>
-                    <Link to="/outerTurizm">Tashqi turizm</Link>
+                    <Link to="/outerTourism">Tashqi Tourism</Link>
                   </li>
                   <li>
-                    <Link to="/innerTurizm">Ichki turizm</Link>
+                    <Link to="/innerTourism">Ichki Tourism</Link>
                   </li>
                   <li>
                     <Link to="/discount">Chegirma</Link>

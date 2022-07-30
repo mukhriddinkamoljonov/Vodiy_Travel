@@ -1,7 +1,7 @@
 import React from "react";
 
-const Turizm = () => {
-  return <div>Turizm</div>;
+const Tourism = () => {
+  return <div>Tourism</div>;
 };
 
-export default Turizm;
+export default Tourism;

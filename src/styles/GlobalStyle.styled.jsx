@@ -27,9 +27,9 @@ export const WrapperNavbar = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 5px 0;
-    background-color: #fff;
+    background-color: #eee;
     ul {
-      margin-right: 70px;
+      // margin-right: 70px;
     }
     li {
       color: #223645;
@@ -80,7 +80,6 @@ export const InnerAndOuterContainer = styled.div`
   margin-bottom: 0;
   opacity: 0.9;
 
-
   h1 {
     font-size: 60px;
     font-weight: 800;
@@ -89,16 +88,16 @@ export const InnerAndOuterContainer = styled.div`
     margin-bottom: 0;
     color: #fff;
   }
-  
-  @media(max-width:720px) {
+
+  @media (max-width: 720px) {
     h1 {
-      font-size:40px ;
+      font-size: 40px;
     }
   }
 
-  @media(max-width:480px) {
+  @media (max-width: 480px) {
     h1 {
-      font-size:32px ;
+      font-size: 32px;
       text-align: center;
     }
   }

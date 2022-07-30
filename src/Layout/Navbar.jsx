@@ -122,13 +122,13 @@ const Navbar = () => {
                   <Link to="/">BOSH SAHIFA</Link>
                 </li>
                 <li>
-                  <Link to="/outerTurizm" onClick={() => console.log("Outer")}>
-                    TASHQI TURIZM
+                  <Link to="/outerTourism" onClick={() => console.log("Outer")}>
+                    TASHQI Tourism
                   </Link>
                 </li>
                 <li>
-                  <Link to="/innerTurizm" onClick={() => console.log("Inner")}>
-                    ICHKI TURIZM
+                  <Link to="/innerTourism" onClick={() => console.log("Inner")}>
+                    ICHKI Tourism
                   </Link>
                 </li>
                 <li>
@@ -162,13 +162,13 @@ const Navbar = () => {
             <Link to="/">BOSH SAHIFA</Link>
           </li>
           <li>
-            <Link to="/outerTurizm" onClick={() => setToggle(!toggle)}>
-              TASHQI TURIZM
+            <Link to="/outerTourism" onClick={() => setToggle(!toggle)}>
+              TASHQI Tourism
             </Link>
           </li>
           <li>
-            <Link to="/innerTurizm" onClick={() => setToggle(!toggle)}>
-              ICHKI TURIZM
+            <Link to="/innerTourism" onClick={() => setToggle(!toggle)}>
+              ICHKI Tourism
             </Link>
           </li>
           <li>

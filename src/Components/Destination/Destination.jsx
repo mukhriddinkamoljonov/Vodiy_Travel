@@ -28,7 +28,7 @@ const Card = (props) => {
         </div>
         <p className="text-[#0085BA] text-[13px] uppercase">{props.location}</p>
         <h1
-          onClick={() => navigate(`/outerTurizm/${props.link}`)}
+          onClick={() => navigate(`/outerTourism/${props.link}`)}
           className="cursor-pointer text-[22px] font-bold text-[#223645] uppercase leading-6 mt-2"
         >
           {props.title}
