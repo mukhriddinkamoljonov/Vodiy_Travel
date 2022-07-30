@@ -2,7 +2,7 @@ import React from "react";
 
 const Modal = (props) => {
   return (
-    <div className="fixed top-0 flex justify-center items-center !z-[9999999] bg-[#333] !w-full !h-screen">
+    <div id="close" className="fixed top-0 flex justify-center items-center !z-[9999999] bg-[#333] !w-full !h-screen">
       <form className="px-4 pb-4 pt-4 bg-darkGreen rounded-md max-w-xl">
         <div className="flex items-center justify-end mb-2 box-content">
           <svg onClick={props.close}
