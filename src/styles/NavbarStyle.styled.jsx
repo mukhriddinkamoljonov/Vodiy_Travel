@@ -124,7 +124,7 @@ export const NavbarLisItems = styled.div`
       margin: 0 20px;
       color: #fff;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.3;
       position: relative;
       text-transform: uppercase;
