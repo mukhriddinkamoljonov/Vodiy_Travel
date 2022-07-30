@@ -144,7 +144,9 @@ const Navbar = () => {
               </ul>
             </NavbarLisItems>
             <Button>
-              <Link to="/contact"><button>ALOQA</button></Link>
+              <Link to="/contact">
+                <button>ALOQA</button>
+              </Link>
             </Button>
           </WrapperBottomNavbar>
         </GlobalContainer>
@@ -155,34 +157,34 @@ const Navbar = () => {
             {toggle ? <CgClose /> : <FiMenu />}
             <span>Menu</span>
           </div>
-      <NavbarMenuList toggler={toggle}>
-        <ul>
-          <li onClick={() => setToggle(!toggle)}>
-            <Link to="/">BOSH SAHIFA</Link>
-          </li>
-          <li>
-            <Link to="/outerTourism" onClick={() => setToggle(!toggle)}>
-              TASHQI Tourism
-            </Link>
-          </li>
-          <li>
-            <Link to="/innerTourism" onClick={() => setToggle(!toggle)}>
-              ICHKI Tourism
-            </Link>
-          </li>
-          <li>
-            <Link to="/discount" onClick={() => setToggle(!toggle)}>
-              CHEGIRMA
-            </Link>
-          </li>
-          <li onClick={() => setToggle(!toggle)}>
-            <Link to="/contact">ALOQA </Link>
-          </li>
-          <li>
-            <DropDowner />
-          </li>
-        </ul>
-      </NavbarMenuList>
+          <NavbarMenuList toggler={toggle}>
+            <ul>
+              <li onClick={() => setToggle(!toggle)}>
+                <Link to="/">BOSH SAHIFA</Link>
+              </li>
+              <li>
+                <Link to="/outerTourism" onClick={() => setToggle(!toggle)}>
+                  TASHQI Tourism
+                </Link>
+              </li>
+              <li>
+                <Link to="/innerTourism" onClick={() => setToggle(!toggle)}>
+                  ICHKI Tourism
+                </Link>
+              </li>
+              <li>
+                <Link to="/discount" onClick={() => setToggle(!toggle)}>
+                  CHEGIRMA
+                </Link>
+              </li>
+              <li onClick={() => setToggle(!toggle)}>
+                <Link to="/contact">ALOQA </Link>
+              </li>
+              <li>
+                <DropDowner />
+              </li>
+            </ul>
+          </NavbarMenuList>
         </div>
       </HamburegerWrap>
     </WrapperNavbar>
