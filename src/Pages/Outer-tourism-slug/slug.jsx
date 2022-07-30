@@ -21,8 +21,16 @@ const OuterTourismSlug = () => {
     setIsActiveModal(true);
     document.body.style.overflow = "hidden";
   };
-
-  const closeModal = () => {
+  useEffect(() => {
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "close") {
+        setIsActiveModal(false);
+        document.body.style.overflow = "visible";
+      }
+    });
+  });
+  const closeModal = (e) => {
+    console.log(e);
     setIsActiveModal(false);
     document.body.style.overflow = "visible";
   };
