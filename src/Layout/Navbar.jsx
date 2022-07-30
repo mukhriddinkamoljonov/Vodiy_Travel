@@ -25,7 +25,7 @@ import {
 import { useState } from "react";
 import { useEffect } from "react";
 
-const Navbar = () => {
+const Navbar = ({ actives }) => {
   const [stickyClass, setStickyClass] = useState("");
   const [stickyMenuClass, setStickyMenuClass] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = () => {
   };
 
   return (
-    <WrapperNavbar>
+    <WrapperNavbar actives>
       <TopNavbar>
         <GlobalContainer>
           <WrapperTopNavbar>
