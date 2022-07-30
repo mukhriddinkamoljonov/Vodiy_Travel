@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import Slider from "react-slick";
 // import { SliderImgWrapper } from "../../Home/HomeStyle.styled";
@@ -11,13 +11,27 @@ import img2 from "../../assets/photo/card.jpg";
 import img3 from "../../assets/photo/maldive.jpg";
 import img4 from "../../assets/photo/sydney.jpg";
 import img5 from "../../assets/photo/packageSam.jpg";
+import Modal from "../../Components/Modal";
 
 const OuterTourismSlug = () => {
+  const [isActiveModal, setIsActiveModal] = useState(false);
+
+  const placingOrder = () => {
+    console.log();
+    setIsActiveModal(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setIsActiveModal(false);
+    document.body.style.overflow = "visible";
+  };
+
   useEffect(() => {
     window.scrollTo({
-      top: 0
-    })
-  }, [])
+      top: 0,
+    });
+  }, []);
   const settings = {
     dots: false,
     fade: false,
@@ -74,6 +88,7 @@ const OuterTourismSlug = () => {
         <GlobalContainer>
           <h1>Maqsad</h1>
         </GlobalContainer>
+        {isActiveModal && <Modal close={closeModal} />}
       </InnerAndOuterContainer>
       <GlobalContainer>
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-3 lg:gap-7 md:gap-7 gap-0 py-[50px]">
@@ -109,7 +124,10 @@ const OuterTourismSlug = () => {
             <div className="max-w-[750px]">
               <img className="object-cover rounded-3xl" src={img} alt="" />
             </div>
-            <button className="bg-green py-3 px-4 rounded-3xl mt-8 flex items-center justify-center text-white">
+            <button
+              onClick={placingOrder}
+              className="bg-green py-3 px-4 rounded-3xl mt-8 flex items-center justify-center text-white"
+            >
               BUYURTMA BERISH
             </button>
             <p className="text-[19px] font-bold mt-8">Ma'lumot :</p>
@@ -206,7 +224,7 @@ const OuterTourismSlug = () => {
               Quaerat inventore! Vestibulum aenean volutpat gravida. Sagittis,
               euismod perferendis
             </p>
-            <Slider {...settings}>
+            <Slider {...settings} className="z-[-1]">
               <div className="ml-5 mt-2">
                 <img
                   className="w-[150px] h-[150px] object-cover rounded-3xl"
