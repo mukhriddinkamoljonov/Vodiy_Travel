@@ -63,7 +63,6 @@ const Navbar = () => {
         <GlobalContainer>
           <WrapperTopNavbar>
             <div>
-              {" "}
               <a href="tel:+998-90-531-34-13" className="navbarPhone">
                 <span className="navbarPhoneIcon">
                   <BiPhoneCall className="phoneIcon" />

@@ -100,7 +100,7 @@ export const SocialMediaIcons = styled.div`
     gap: 15px;
   }
 
-  ul li {
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ export const SocialMediaIcons = styled.div`
     border-radius: 100%;
     transition: all 0.3s ease;
   }
-  ul li:hover {
+  a:hover {
     border: 1px solid #00a795;
   }
 `;
