@@ -18,8 +18,8 @@ const Routess = () => {
       <Route path="/contact" element={<Contact />} />
 
       {/* there should be a 'discount' page slug */}
-      <Route path="/discount/:slug" element={<InnerSlug />}></Route>
-      <Route path="/innerTurizm/:slug" element={<InnerSlug />}></Route>
+      <Route path="/discount/:slug" element={<OuterTurismSlug />}></Route>
+      <Route path="/innerTurizm/:slug" element={<OuterTurismSlug />}></Route>
       <Route path="/outerTurizm/:slug" element={<OuterTurismSlug />}></Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
