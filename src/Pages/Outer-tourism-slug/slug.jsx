@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ReactStars from "react-rating-stars-component";
 import Slider from "react-slick";
 // import { SliderImgWrapper } from "../../Home/HomeStyle.styled";
@@ -12,7 +12,12 @@ import img3 from "../../assets/photo/maldive.jpg";
 import img4 from "../../assets/photo/sydney.jpg";
 import img5 from "../../assets/photo/packageSam.jpg";
 
-const OuterTurismSlug = () => {
+const OuterTourismSlug = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0
+    })
+  }, [])
   const settings = {
     dots: false,
     fade: false,
@@ -253,4 +258,4 @@ const OuterTurismSlug = () => {
   );
 };
 
-export default OuterTurismSlug;
+export default OuterTourismSlug;

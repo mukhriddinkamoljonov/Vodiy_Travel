@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import Main from "./Layout/Main";
-import Routess from "./Router/Routess";
+import Routers from "./Router/Routers";
 import { GlobalStyle } from "./styles/GlobalStyle.styled";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       ) : (
         <Main>
           <GlobalStyle>
-            <Routess />
+            <Routers />
           </GlobalStyle>
         </Main>
       )}
