@@ -11,7 +11,10 @@ module.exports = {
       'backgroundColor': '#1e1e20',
       'darkGreen': '#1e635c',
       'white': '#ffffff',
-      'black': '#000000'
+      'black': '#000000',
+      'yellow': 'yellow',
+      'blue': 'blue',
+      'red': 'red'
     },
   },
   plugins: [],

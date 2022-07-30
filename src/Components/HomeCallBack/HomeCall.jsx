@@ -28,6 +28,8 @@ const HomeCall = () => {
                 <a
                   id="video-container"
                   data-fancybox="video-gallery"
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://www.youtube.com/watch?v=2OYar8OHEOU"
                 >
                   <div className="playBtn">
