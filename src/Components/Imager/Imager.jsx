@@ -1,7 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
 import ImageViewer from "react-simple-image-viewer";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { GalleryContainer } from "./ImagerStyle";
 import { GlobalContainer, TextWrap } from "../../styles/GlobalStyle.styled";
 
@@ -26,10 +24,6 @@ function ImagerView() {
     setCurrentImage(0);
     setIsViewerOpen(false);
   };
-
-  useEffect(() => {
-    AOS.init();
-  });
 
   return (
     <GlobalContainer>
