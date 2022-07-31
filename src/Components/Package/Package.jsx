@@ -5,17 +5,17 @@ const PackageCard = (props) => {
   const navigate = useNavigate();
   return (
     <div
-      className="rounded-3xl max-h-[520px] py-6 pl-6 pr-9 w-full"
+      className="rounded-[10px] max-h-[520px] py-6 pl-6 pr-9 w-full"
       style={{
         backgroundImage: `url(${props.background})`,
         backgroundRepeat: "no-repeat",
         objectFit: "cover",
       }}
     >
-      <div className="bg-green rounded-3xl ml-[75%] text-white py-2 px-4 w-[137px] text-sm flex justify-center items-center">
+      <div className="bg-green rounded-[10px] ml-[75%] text-white py-2 px-4 w-[137px] text-sm flex justify-center items-center">
         {props.package}
       </div>
-      <div className="bg-white p-6 rounded-3xl mt-[100px] opacity-70 max-w-[345px]">
+      <div className="bg-white p-6 rounded-[10px] mt-[100px] opacity-70 max-w-[345px]">
         <div className="flex items-center justify-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ const PackageCard = (props) => {
           onClick={() => {
             navigate(`/discount/${props.link}`);
           }}
-          className="uppercase bg-green text-white py-2 px-4 mt-3 text-base rounded-3xl flex items-center justify-center"
+          className="uppercase bg-green font-semibold text-white py-2 px-4 mt-3 text-base rounded-[10px] flex items-center justify-center"
         >
           BUYURTMA BERISH
         </button>

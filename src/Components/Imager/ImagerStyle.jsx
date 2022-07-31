@@ -6,7 +6,7 @@ export const GalleryContainer = styled.div`
   gap: 10px;
   grid-template-columns: auto auto auto;
   img {
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
   }
 

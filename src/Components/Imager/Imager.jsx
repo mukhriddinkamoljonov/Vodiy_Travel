@@ -1,5 +1,7 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import ImageViewer from "react-simple-image-viewer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { GalleryContainer } from "./ImagerStyle";
 import { GlobalContainer, TextWrap } from "../../styles/GlobalStyle.styled";
 
@@ -25,17 +27,22 @@ function ImagerView() {
     setIsViewerOpen(false);
   };
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <GlobalContainer>
       <GalleryContainer>
         {images.map((src, index) => (
           <img
+            data-aos="fade-right"
             src={src}
             onClick={() => openImageViewer(index)}
             width="300"
             key={index}
             style={{ margin: "2px" }}
-            alt=""
+            alt="Images"
             className="img"
           />
         ))}

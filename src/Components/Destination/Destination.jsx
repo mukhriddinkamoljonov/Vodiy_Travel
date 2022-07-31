@@ -14,10 +14,10 @@ const Card = (props) => {
         backgroundRepeat: "no-repeat",
         objectFit: "cover",
       }}
-      className="w-full rounded-3xl p-6 min-h-[425px] relative"
+      className="w-full rounded-[10px] p-6 min-h-[425px] relative"
     >
-      <div className="relative px-5 py-6 bg-white w-full rounded-3xl mt-[100%]">
-        <div className="absolute top-[-15px] flex items-center justify-center right-[20px] w-[124px] h-[33px] bg-[#3A78C9] rounded-3xl">
+      <div className="relative px-5 py-6 bg-white w-full rounded-[10px] mt-[100%]">
+        <div className="absolute top-[-15px] flex items-center justify-center right-[20px] w-[124px] h-[33px] bg-[#3A78C9] rounded-[10px]">
           <ReactStars
             count={5}
             size={22}

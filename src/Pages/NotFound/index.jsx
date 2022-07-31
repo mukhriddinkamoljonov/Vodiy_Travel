@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <InnerAndOuterContainer>
       <GlobalContainer>
-        <h1>404</h1>
+        <h1 data-aos="fade-up" data-aos-duration="400">404</h1>
       </GlobalContainer>
     </InnerAndOuterContainer>
   );

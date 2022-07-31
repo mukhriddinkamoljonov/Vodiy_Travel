@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Destination from "../../Components/Destination/Destination";
 import {
   GlobalContainer,
@@ -9,7 +9,7 @@ import background2 from "../../assets/photo/bg.jpg";
 import background3 from "../../assets/photo/maldive.jpg";
 import background4 from "../../assets/photo/packageSam.jpg";
 import background5 from "../../assets/photo/sma.jpg";
-import {OuterContainer} from "./OuterStyle"
+import { OuterContainer } from "./OuterStyle";
 
 const OuterTourism = () => {
   useEffect(() => {
@@ -59,7 +59,9 @@ const OuterTourism = () => {
     <>
       <OuterContainer>
         <GlobalContainer>
-          <h1>MAQSAD</h1>
+          <h1 data-aos="fade-up" data-aos-duration="400">
+            MAQSAD
+          </h1>
         </GlobalContainer>
       </OuterContainer>
       <GlobalContainer>

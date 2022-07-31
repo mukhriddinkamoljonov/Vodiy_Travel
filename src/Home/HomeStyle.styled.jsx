@@ -145,7 +145,7 @@ export const BlogImgWrap = styled.div`
     top: 18%;
     right: -15%;
     padding: 20px 40px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #00a795;
   }
 
@@ -158,7 +158,7 @@ export const BlogImgWrap = styled.div`
   }
 
   img {
-    border-radius: 25px;
+    border-radius: 10px;
     margin-bottom: 50px;
     object-fit: cover;
   }
@@ -221,7 +221,7 @@ export const ClientBrand = styled.div`
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px;
   margin-top: 50px;
   background-color: #ffffff;

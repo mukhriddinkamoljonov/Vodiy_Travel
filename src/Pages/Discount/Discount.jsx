@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
-import {
-  GlobalContainer,
-  InnerAndOuterContainer,
-} from "../../styles/GlobalStyle.styled";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { GlobalContainer } from "../../styles/GlobalStyle.styled";
 import PackageCard from "../../Components/Package/Package";
 import img from "../../assets/photo/sydney.jpg";
 import { DiscountContainer } from "./DiscountStyle.style";
@@ -12,10 +11,12 @@ const Discount = () => {
     window.scrollTo({
       top: 0,
     });
+    AOS.init();
   }, []);
   const data = [
     {
       id: 1,
+      aos: "fade-right",
       img: img,
       package: "Contact us 12%",
       day: "8 day",
@@ -27,6 +28,7 @@ const Discount = () => {
     {
       id: 2,
       img: img,
+      aos: "fade-right",
       package: "Contact us 12%",
       day: "8 day",
       location: "Samarqand",
@@ -37,6 +39,7 @@ const Discount = () => {
     {
       id: 3,
       img: img,
+      aos: "fade-right",
       package: "Contact us 12%",
       day: "8 day",
       location: "Samarqand",
@@ -49,11 +52,14 @@ const Discount = () => {
     <div>
       <DiscountContainer>
         <GlobalContainer>
-          <h1>CHEGIRMALAR</h1>
+          <h1 data-aos="fade-up" data-aos-duration="400">CHEGIRMALAR</h1>
         </GlobalContainer>
       </DiscountContainer>
       <GlobalContainer>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 md:gap-8 my-[95px]">
+        <div
+          data-aos="fade-right"
+          className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 md:gap-8 my-[95px]"
+        >
           {data.map((item) => (
             <PackageCard
               key={item.id}

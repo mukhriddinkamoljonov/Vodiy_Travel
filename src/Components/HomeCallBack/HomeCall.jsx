@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BsPlayFill } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   GlobalContainer,
   Overlay,
@@ -18,6 +20,9 @@ import Button from "../Button/Button";
 import ButtonOutLined from "../Button/ButtonOutLined";
 
 const HomeCall = () => {
+  useEffect(() => {
+    AOS.init()
+  })
   return (
     <>
       <HomeCallWrap>
@@ -73,7 +78,7 @@ const HomeCall = () => {
             </CounterItem>
           </CounterContainer>
         </HomeCounter>
-        <TextWrap>
+        <TextWrap data-aos="fade-up" >
           <h6>MAXSUS PAKETLARIMIZ</h6>
           <h2>TAKLIF VA CHEGIRMA</h2>
           <p>

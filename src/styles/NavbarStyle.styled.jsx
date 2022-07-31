@@ -156,7 +156,7 @@ export const Button = styled.button`
     width: 90px;
     height: 38px;
     background: #00a795;
-    border-radius: 25px;
+    border-radius: 10px;
   }
 
   button:hover {

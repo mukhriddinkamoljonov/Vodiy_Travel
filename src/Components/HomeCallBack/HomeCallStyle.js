@@ -104,7 +104,7 @@ export const CounterContainer = styled.div`
   display: flex;
   flex: wrap;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 10px;
   margin-right: 20px;
   margin-left: 20px;
   padding: 40px 0;

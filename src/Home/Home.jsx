@@ -1,4 +1,6 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
@@ -38,9 +40,10 @@ import { HomeCallWrap } from "../Components/HomeCallBack/HomeCallStyle";
 const Home = () => {
   useEffect(() => {
     window.scrollTo({
-      top: 0
-    })
-  }, [])
+      top: 0,
+    });
+    AOS.init();
+  }, []);
   let swiperData = [
     {
       id: 1,
@@ -177,8 +180,8 @@ const Home = () => {
         <BlogSection>
           <LeftSight>
             <BlogImgWrap>
-              <img src={img} alt="" />
-              <div className="blogImgOver">
+              <img data-aos="fade-right" src={img} alt="" />
+              <div data-aos="fade-left" className="blogImgOver">
                 <p className="imgOverText">
                   Biz siz uchun eng yahshi sayohatni taklif etamiz
                 </p>
@@ -200,7 +203,7 @@ const Home = () => {
                 boshlab unga xosdir, deb hisoblash mumkin. Hattoki go’daklar ham
                 asta-sekin o’zlarining tevarak-atroflarini o’rgana boshlashadi.{" "}
               </p>
-              <ClientBrand>
+              <ClientBrand data-aos="fade-right">
                 <div className="brandImgDiv">
                   <img
                     src="	http://www.xondoppitravel.com/admin/files/client-img8.png"
@@ -229,7 +232,7 @@ const Home = () => {
             </BlogImgWrap>
           </LeftSight>
           <RightSight>
-            {blogs.map((blog,index) => (
+            {blogs.map((blog, index) => (
               <RightSightContainer key={index}>
                 <div className="icon_box">
                   <div className="icon">{blog.icon}</div>
@@ -241,7 +244,7 @@ const Home = () => {
           </RightSight>
         </BlogSection>
       </GlobalContainer>
-      <TextWrap>
+      <TextWrap data-aos="fade-up">
         <h6>Tourism</h6>
         <h2>TASHQI Tourism</h2>
         <p>
@@ -251,13 +254,13 @@ const Home = () => {
           hayotdan, doimiy uy ishlaridan xalos bo’lishga va nihoyat, shunchaki
           hordiq chiqarishga ko’maklashadi.
         </p>
-      </TextWrap>
+      </TextWrap> 
       <ButtonWrapper>
         <Button>BARCHASINI KO'RISH</Button>
       </ButtonWrapper>
       <Carusel />
       <ButtonWrapper>
-        <TextWrap>
+        <TextWrap data-aos="fade-up">
           <h6>Ichki Tourism</h6>
           <h2>ICHKI Tourism</h2>
           <p>
@@ -284,8 +287,8 @@ const Home = () => {
         </GlobalContainer>
         <Button>BARCHASINI KO'RISH</Button>
       </ButtonWrapper>
-      <HomeCall />
-      <TextWrap>
+      <HomeCall data-aos="fade-up"/>
+      <TextWrap data-aos="fade-up">
         <h6>Sayohatchilardan olingan FOTOLAR</h6>
         <h2>FOTOGALEREYA</h2>
         <p>

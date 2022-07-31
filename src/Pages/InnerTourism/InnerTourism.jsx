@@ -1,4 +1,6 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import SecondCard from "../../Components/SecondCard";
 import {
   GlobalContainer,
@@ -13,6 +15,7 @@ const InnerTourism = () => {
     window.scrollTo({
       top: 0,
     });
+    AOS.init();
   }, []);
   const data = [
     {
@@ -51,7 +54,9 @@ const InnerTourism = () => {
     <>
       <InnerContainer>
         <GlobalContainer>
-          <h1>TUR PAKETLAR</h1>
+          <h1 data-aos="fade-up" data-aos-duration="400">
+            TUR PAKETLAR
+          </h1>
         </GlobalContainer>
       </InnerContainer>
       <div>
