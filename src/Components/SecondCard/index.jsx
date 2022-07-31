@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ReactStars from "react-rating-stars-component";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SecondCard = (props) => {
+  useEffect(() => {
+    AOS.init();
+  });
+
   const navigate = useNavigate();
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-1 rounded-[10px] h-64 mb-10">
+    <div
+      className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-1 rounded-[10px] h-64 mb-10"
+    >
       <div className="col-span-5 rounded-[10px] border-r-5 border-blue-400">
         <img
           src={props.img}

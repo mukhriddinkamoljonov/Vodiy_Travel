@@ -57,7 +57,6 @@ const Discount = () => {
       </DiscountContainer>
       <GlobalContainer>
         <div
-          data-aos="fade-right"
           className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 md:gap-8 my-[95px]"
         >
           {data.map((item) => (

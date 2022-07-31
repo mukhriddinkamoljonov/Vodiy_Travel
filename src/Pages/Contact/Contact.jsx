@@ -24,7 +24,7 @@ const Contact = () => {
       <div className="bg-backgroundColor py-[95px]">
         <GlobalContainer>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-7">
-            <div data-aos="fade-right">
+            <div>
               <p className="text-green">Biz bilan aloqa</p>
               <h1 className="text-[#fff] text-[30px] font-bold">
                 BIZNING IJTIMOIY TARMOQLAR
@@ -104,7 +104,7 @@ const Contact = () => {
                   </svg>
                 </a>
               </div>
-              <iframe data-aos="fade-right"
+              <iframe
                 className="w-full md:h-[350px] h-[200px] md:rounded-[10px] rounded-lg border-none mt-[30px]"
                 title="This is a unique title"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11988.36848973895!2d69.22814145000001!3d41.3068595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1658514867575!5m2!1sen!2s"
@@ -113,7 +113,7 @@ const Contact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div data-aos="fade-left">
+            <div>
               <div className="bg-green pt-10 pb-5 md:rounded-[10px] rounded-lg md:px-5 px-3">
                 <form className="flex flex-col">
                   <label className="text-white text-[18px] mb-1" htmlFor="">

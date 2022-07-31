@@ -1,4 +1,5 @@
-import React from "react";
+import AOS from "aos";
+import React, { useEffect } from "react";
 import ReactStars from "react-rating-stars-component";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +8,11 @@ const Card = (props) => {
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
+
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div
       style={{
@@ -16,7 +22,9 @@ const Card = (props) => {
       }}
       className="w-full rounded-[10px] p-6 min-h-[425px] relative"
     >
-      <div className="relative px-5 py-6 bg-white w-full rounded-[10px] mt-[100%]">
+      <div
+        className="relative px-5 py-6 bg-white w-full rounded-[10px] mt-[100%]"
+      >
         <div className="absolute top-[-15px] flex items-center justify-center right-[20px] w-[124px] h-[33px] bg-[#3A78C9] rounded-[10px]">
           <ReactStars
             count={5}

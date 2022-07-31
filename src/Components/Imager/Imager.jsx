@@ -36,7 +36,6 @@ function ImagerView() {
       <GalleryContainer>
         {images.map((src, index) => (
           <img
-            data-aos="fade-right"
             src={src}
             onClick={() => openImageViewer(index)}
             width="300"
