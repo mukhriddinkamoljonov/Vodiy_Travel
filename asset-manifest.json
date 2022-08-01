@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.43616e8a.css",
-    "main.js": "/static/js/main.88a59110.js",
+    "main.css": "/static/css/main.8e25946f.css",
+    "main.js": "/static/js/main.2602a706.js",
     "static/media/maldive.jpg": "/static/media/maldive.bc23ad59dd6d71850c43.jpg",
     "static/media/bg.jpg": "/static/media/bg.c578bf0232c370f0ba17.jpg",
     "static/media/sma.jpg": "/static/media/sma.c9dfe1eb24ab28b72b43.jpg",
@@ -15,11 +15,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.43616e8a.css.map": "/static/css/main.43616e8a.css.map",
-    "main.88a59110.js.map": "/static/js/main.88a59110.js.map"
+    "main.8e25946f.css.map": "/static/css/main.8e25946f.css.map",
+    "main.2602a706.js.map": "/static/js/main.2602a706.js.map"
   },
   "entrypoints": [
-    "static/css/main.43616e8a.css",
-    "static/js/main.88a59110.js"
+    "static/css/main.8e25946f.css",
+    "static/js/main.2602a706.js"
   ]
 }
