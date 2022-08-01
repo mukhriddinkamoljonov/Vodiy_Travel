@@ -6,7 +6,7 @@ import { GlobalStyle } from "./styles/GlobalStyle.styled";
 
 function App() {
   const [loading, setLoading] = useState(false);
-
+// sdfdsfdsf
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
