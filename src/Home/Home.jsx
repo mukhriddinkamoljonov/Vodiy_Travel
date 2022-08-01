@@ -164,7 +164,7 @@ const Home = () => {
                 <Overlay></Overlay>
                 <SwiperChild>
                   <h1>{val.title}</h1>
-                  <p>{val.paragraph}</p>
+                  <p className="text-justify">{val.paragraph}</p>
                   <div className="btnWrapper">
                     <Button>Chet elga sayohat</Button>
                     <ButtonOutLined>Ichki sayohat</ButtonOutLined>
@@ -186,7 +186,7 @@ const Home = () => {
                 </p>
               </div>
               <h1>Sayohat manzilini tanlashda adashmang</h1>
-              <p>
+              <p className="text-justify">
                 Inson hayotga kelibdimi, uni mazmunli o’tkaza olishni ham
                 bilishi kerak. Hayotingizning har bir daqiqasini qiziqarli va
                 unutilmas o’tkazishga odatlaning. Kundalik tashvishlar va
@@ -246,7 +246,7 @@ const Home = () => {
       <TextWrap data-aos="fade-up">
         <h6>Tourism</h6>
         <h2>TASHQI Tourism</h2>
-        <p>
+        <p className="text-justify">
           Boshqa mamlakatlarga tashrif buyurib, ularning madaniyati, aholisi,
           tabiati bilan tanishishim – ijobiy his-tuyg’ularga va ko’plab
           taassurotlarga ega bo’lishim mumkin. Bularning barchasi kundalik

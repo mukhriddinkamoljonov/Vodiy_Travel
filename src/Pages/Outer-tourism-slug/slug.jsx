@@ -138,7 +138,7 @@ const OuterTourismSlug = () => {
               BUYURTMA BERISH
             </button>
             <p className="text-[19px] font-bold mt-8">Ma'lumot :</p>
-            <p className="text-[14px] leading-6">
+            <p className="text-[14px] leading-6 text-justify">
               Boshqa mamlakatlarga tashrif buyurib, ularning madaniyati,
               aholisi, tabiati bilan tanishishim – ijobiy his-tuyg’ularga va
               ko’plab taassurotlarga ega bo’lishim mumkin. Bularning barchasi
