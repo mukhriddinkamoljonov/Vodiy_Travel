@@ -1,4 +1,6 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   GlobalContainer,
   InnerAndOuterContainer,
@@ -8,11 +10,15 @@ const Index = () => {
     window.scrollTo({
       top: 0,
     });
+    AOS.init();
   }, []);
   return (
     <InnerAndOuterContainer>
       <GlobalContainer>
-        <h1 data-aos="fade-up" data-aos-duration="400">404</h1>
+        <h4 data-aos="fade-up" data-aos-duration="400">
+          Sahifa topilmadi
+        </h4>
+        <p className="text-center mt-4">404</p>
       </GlobalContainer>
     </InnerAndOuterContainer>
   );
