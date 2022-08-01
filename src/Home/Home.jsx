@@ -35,7 +35,6 @@ import { FaUmbrellaBeach, FaUserTag, FaHeadset } from "react-icons/fa";
 import img from "../assets/photo/sma.jpg";
 import SecondCard from "../Components/SecondCard";
 import HomeCall from "../Components/HomeCallBack/HomeCall";
-import { HomeCallWrap } from "../Components/HomeCallBack/HomeCallStyle";
 
 const Home = () => {
   useEffect(() => {
@@ -145,7 +144,6 @@ const Home = () => {
     dots: true,
     fade: true,
     infinite: true,
-    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
@@ -254,7 +252,7 @@ const Home = () => {
           hayotdan, doimiy uy ishlaridan xalos bo’lishga va nihoyat, shunchaki
           hordiq chiqarishga ko’maklashadi.
         </p>
-      </TextWrap> 
+      </TextWrap>
       <ButtonWrapper>
         <Button>BARCHASINI KO'RISH</Button>
       </ButtonWrapper>
@@ -287,7 +285,7 @@ const Home = () => {
         </GlobalContainer>
         <Button>BARCHASINI KO'RISH</Button>
       </ButtonWrapper>
-      <HomeCall data-aos="fade-up"/>
+      <HomeCall data-aos="fade-up" />
       <TextWrap data-aos="fade-up">
         <h6>Sayohatchilardan olingan FOTOLAR</h6>
         <h2>FOTOGALEREYA</h2>
