@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import ImageViewer from "react-simple-image-viewer";
 import { GalleryContainer } from "./ImagerStyle";
 import { GlobalContainer, TextWrap } from "../../styles/GlobalStyle.styled";
@@ -35,7 +35,7 @@ function ImagerView() {
             width="300"
             key={index}
             style={{ margin: "2px" }}
-            alt=""
+            alt="Images"
             className="img"
           />
         ))}

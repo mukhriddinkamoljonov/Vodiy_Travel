@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import Slider from "react-slick";
-import "../../styles/GlobalStyle.styled";
-// import { SliderImgWrapper } from "../../Home/HomeStyle.styled";
 import {
   GlobalContainer,
   InnerAndOuterContainer,
-  WrapperNavbar,
 } from "../../styles/GlobalStyle.styled";
 import img from "../../assets/photo/sma.jpg";
 import img2 from "../../assets/photo/card.jpg";
@@ -96,11 +93,9 @@ const OuterTourismSlug = () => {
     <>
       <InnerAndOuterContainer>
         <GlobalContainer>
-          <h1>Maqsad</h1>
+          <h1 data-aos="fade-up" data-aos-duration="400">Maqsad</h1>
         </GlobalContainer>
-        <WrapperNavbar >
-          {isActiveModal && <Modal close={closeModal} />}
-        </WrapperNavbar>
+        {isActiveModal && <Modal close={closeModal} />}
       </InnerAndOuterContainer>
       <GlobalContainer>
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-3 lg:gap-7 md:gap-7 gap-0 py-[50px]">
@@ -118,7 +113,7 @@ const OuterTourismSlug = () => {
                 />
               </div>
               <div>
-                <div className="bg-green text-center flex items-center justify-center flex-col rounded-3xl text-white w-[130px] h-[130px]">
+                <div className="bg-green text-center flex items-center justify-center flex-col rounded-[10px] text-white w-[130px] h-[130px]">
                   <p className="text-[18px] font-bold">10 910 so'm yoki $1</p>
                   <p className="text-[14px] text-[#cecdcd]">/Har Biriga</p>
                 </div>
@@ -134,11 +129,11 @@ const OuterTourismSlug = () => {
               </span>
             </div>
             <div className="max-w-[750px]">
-              <img className="object-cover rounded-3xl" src={img} alt="" />
+              <img className="object-cover rounded-[10px]" src={img} alt="" />
             </div>
             <button
               onClick={placingOrder}
-              className="bg-green py-3 px-4 rounded-3xl mt-8 flex items-center justify-center text-white"
+              className="bg-green py-3 px-4 rounded-[10px] mt-8 flex items-center justify-center text-white"
             >
               BUYURTMA BERISH
             </button>
@@ -169,7 +164,7 @@ const OuterTourismSlug = () => {
               tanishing! Hayotingizning unutilmas onlarida biz sizning
               yoningizda bo’lamiz, biz bilan sayohat qiling!
             </p>
-            <div className="bg-green grid grid-cols-2 col-span-1 text-white p-4 mt-8 rounded-3xl">
+            <div className="bg-green grid grid-cols-2 col-span-1 text-white p-4 mt-8 rounded-[10px]">
               <div className="text-[13px] leading-7">
                 <p className="text-[19px] font-bold">Hususiyat :</p>
                 <p>Ikki tilli maxsus qo'llanma</p>
@@ -202,7 +197,7 @@ const OuterTourismSlug = () => {
             </div>
           </div>
           <div className="col-span-1">
-            <form className="bg-green p-5 text-white rounded-3xl flex flex-col justify-center items-center text-center">
+            <form className="bg-green p-5 text-white rounded-[10px] flex flex-col justify-center items-center text-center">
               <p className="text-[20px] font-bold">Habar Yuborish</p>
               <p className="text-[14px] font-semibold mt-3">
                 Malesuada incidunt excepturi proident quo eros? Sinterdum
@@ -210,24 +205,24 @@ const OuterTourismSlug = () => {
               </p>
               <input
                 required
-                className="text-black px-4 mt-4 py-3 outline-none rounded-3xl mb-4"
+                className="text-black px-4 mt-4 py-3 outline-none rounded-[10px] mb-4"
                 type="text"
                 name=""
                 placeholder="enter your name"
               />
               <input
                 required
-                className="text-black px-4 py-3 outline-none rounded-3xl mb-4"
+                className="text-black px-4 py-3 outline-none rounded-[10px] mb-4"
                 type="number"
                 name=""
                 placeholder="enter your phone number"
               />
               <textarea
                 required
-                className="w-[239px] h-[100px] outline-none rounded-3xl py-2 px-4 text-black"
+                className="w-[239px] h-[100px] outline-none rounded-[10px] py-2 px-4 text-black"
                 placeholder="enter your message"
               />
-              <button className="mt-8 border-white border px-4 py-2 rounded-3xl">
+              <button className="mt-8 border-white border px-4 py-2 rounded-[10px]">
                 Habar yuborish
               </button>
             </form>
@@ -239,42 +234,42 @@ const OuterTourismSlug = () => {
             <Slider {...settings} className="z-[-1]">
               <div className="ml-5 mt-2">
                 <img
-                  className="w-[150px] h-[150px] object-cover rounded-3xl"
+                  className="w-[150px] h-[150px] object-cover rounded-[10px]"
                   src={img}
                   alt=""
                 />
               </div>
               <div className="ml-5 mt-2">
                 <img
-                  className="w-[150px] h-[150px] object-cover rounded-3xl"
+                  className="w-[150px] h-[150px] object-cover rounded-[10px]"
                   src={img2}
                   alt=""
                 />
               </div>
               <div className="ml-5 mt-2">
                 <img
-                  className="w-[150px] h-[150px] object-cover rounded-3xl"
+                  className="w-[150px] h-[150px] object-cover rounded-[10px]"
                   src={img3}
                   alt=""
                 />
               </div>
               <div className="ml-5 mt-2">
                 <img
-                  className="w-[150px] h-[150px] object-cover rounded-3xl"
+                  className="w-[150px] h-[150px] object-cover rounded-[10px]"
                   src={img4}
                   alt=""
                 />
               </div>
               <div className="ml-5 mt-2">
                 <img
-                  className="w-[150px] h-[150px] object-cover rounded-3xl"
+                  className="w-[150px] h-[150px] object-cover rounded-[10px]"
                   src={img5}
                   alt=""
                 />
               </div>
             </Slider>
             <iframe
-              className="w-full md:h-[150px] h-[150px] md:rounded-3xl rounded-lg border-none mt-[30px]"
+              className="w-full md:h-[150px] h-[150px] md:rounded-[10px] rounded-lg border-none mt-[30px]"
               title="This is a unique title"
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11988.36848973895!2d69.22814145000001!3d41.3068595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1658514867575!5m2!1sen!2s"
               allowFullScreen=""

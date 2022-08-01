@@ -15,7 +15,7 @@ export const CaruselItem = styled.div`
   width: 370px;
   height: 270px;
   padding: 30px;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 5%);
 
   .rating_star ul {

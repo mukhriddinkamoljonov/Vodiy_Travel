@@ -11,7 +11,7 @@ export const ButtonInner = styled.button`
     padding: 17px 30px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    border-radius: 25px;
+    border-radius: 10px;
     text-transform: uppercase;
     transition: background-color 0.3s;
     @media (max-width: 460px) {

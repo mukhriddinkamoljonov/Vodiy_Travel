@@ -11,7 +11,7 @@ export const DestinationItem = styled.div`
   position: relative;
   width: 350px;
   min-height: 425px;
-  border-radius: 25px;
+  border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,12 +23,12 @@ export const DestinationItemChild = styled.div`
   background-color: #fff;
   width: 90%;
   padding: 22px 20px;
-  border-radius: 25px;
+  border-radius: 10px;
   margin: 20px;
 
   .rating_star {
     background: #3a78c9;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 2px 12px;
     position: absolute;
     right: 24px;

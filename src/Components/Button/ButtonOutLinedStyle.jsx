@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ButtonOuter = styled.button`
   button {
     margin: 10px;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 15px 30px;
     border: 2px solid #fff;
     transition: background-color 0.3s, border-color 0.3s;
